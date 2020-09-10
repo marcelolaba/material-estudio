@@ -1,8 +1,8 @@
 //sidebar
 const navBtn = document.getElementById("nav-btn");
-navBtn.style.paddingTop = "25px";
+// navBtn.style.paddingTop = "25px";
 var menu = document.getElementById("menu");
-menu.style.paddingTop = "35px";
+// menu.style.paddingTop = "35px";
 const mobileMenu = document.getElementById("mobile-menu");
 const navBar = document.getElementsByClassName("navbar-center");
 

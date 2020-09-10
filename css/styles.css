@@ -220,6 +220,7 @@ Navbar
   cursor: pointer;
   align-self: center;
   justify-self: end;
+  padding-top: 25px;
 }
 
 .change .bar1 {
@@ -253,6 +254,7 @@ Navbar
     display: flex;
     /* align-content: center;
     justify-items: center; */
+    padding-top: 35px;
     transition: all 0.4s ease;
   }
   .menu .active {
