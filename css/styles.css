@@ -151,7 +151,6 @@ p {
   font-size: 1rem;
   border: 1px solid var(--clr-primary-7);
   cursor: pointer;
-  /* border-radius: var(--radius); */
 }
 .btn:hover {
   color: var(--clr-primary-10);
@@ -197,6 +196,7 @@ Navbar
 
 .shrink {
   height: var(--navbar-height-shrink);
+  transition: all 0.4s ease;
 }
 
 .nav-logo {
@@ -221,6 +221,7 @@ Navbar
   align-self: center;
   justify-self: end;
   padding-top: 25px;
+  transition: all 0.4s ease;
 }
 
 .change .bar1 {
@@ -247,13 +248,9 @@ Navbar
   }
   .menu {
     justify-self: end;
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    -moz-column-gap: 2rem;
-    column-gap: 2rem; */
+
     display: flex;
-    /* align-content: center;
-    justify-items: center; */
+
     padding-top: 35px;
     transition: all 0.4s ease;
   }
@@ -274,9 +271,6 @@ Navbar
   .mobile-menu {
     transform: translateY(-120%);
   }
-  /* .nav-logo {
-    margin-top: 20px;
-  } */
 }
 
 /*
