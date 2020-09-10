@@ -47,7 +47,7 @@ Variables
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
-  --navbar-height: 8rem;
+  --navbar-height: 7rem;
   --navbar-height-shrink: 4rem;
   --footer-height: 4rem;
   --logo-height: 4rem;
@@ -314,7 +314,7 @@ Sidebar
   transform: translateY(0);
 }
 .show-nav-small {
-  transform: translateY(-32%);
+  transform: translateY(-25%);
 }
 /* .show-nav-small-project {
   transform: translateY(-30%);
