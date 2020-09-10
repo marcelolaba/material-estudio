@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BID</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./fontawesome-5.12.1/css/all.css" />
+    <link rel="shortcut icon" href="./img/M Fabicon.svg" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="section-center navbar-center">
+        <img
+          id="nav-logo"
+          class="nav-logo svg-img"
+          src="./img/Logo Material.svg"
+          alt="logo-material-estudio"
+        />
+        <div class="nav-btn" id="nav-btn">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class="menu">
+          <li>
+            <a class="menu-link active" href="./index.html">home</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#estudio">estudio</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#portfolio">portfolio</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#contact">contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+    <ul class="mobile-menu" id="mobile-menu">
+      <li><a class="mobile-link active" href="./index.html">home</a></li>
+      <li><a class="mobile-link" href="./index.html#estudio">estudio</a></li>
+      <li>
+        <a class="mobile-link" href="./index.html#portfolio">portfolio</a>
+      </li>
+      <li><a class="mobile-link" href="./index.html#contact">contacto</a></li>
+    </ul>
+    <!-- header -->
+    <section class="proyecto-page">
+      <div class="proyecto-page-center">
+        <article class="info-container">
+          <h3>BID</h3>
+          <h4>Duración: 3 meses</h4>
+          <p>
+            Desarrollo de Obra a partir de proyecto provisto por Comitente.<br />
+            El Banco Interamericano de Desarrollo pregona la sustentabilidad y
+            democratización de recursos. Con estos valores, nos convocan para la
+            construcción de sus oficinas en Buenos Aires. Una obra que combina
+            la refuncionalización de esquemas de trabajo con transparencia,
+            tecnología, arte y nobleza de materiales. Con la combinación de
+            estos recursos y la implementación de detalles constructivos, hemos
+            logrado materializar un espacio de trabajo innovador y con
+            identidad.
+          </p>
+        </article>
+        <article class="proyect-container">
+          <img
+            class="mySlides"
+            src="./img/07-Bid/700x534/bid-01.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides"
+            src="./img/07-Bid/700x534/bid-02.JPG"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides"
+            src="./img/07-Bid/700x534/bid-03.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides"
+            src="./img/07-Bid/700x534/bid-04.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides"
+            src="./img/07-Bid/700x534/bid-05.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides"
+            src="./img/07-Bid/700x534/bid-06.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/07-Bid/700x534/bid-07.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <button id="bleft" class="button btn-left" onclick="plusDivs(-1)">
+            <img
+              class="f-izquierda"
+              src="./img/Flecha para foto principal.svg"
+              alt=""
+            />
+          </button>
+          <button id="bright" class="button btn-right" onclick="plusDivs(1)">
+            <img
+              class="f-derecha"
+              src="./img/Flecha para foto principal.svg"
+              alt=""
+            />
+          </button>
+          <!-- The dots/circles -->
+          <div class="dot-box">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+          </div>
+        </article>
+      </div>
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlidesM">
+            <div class="numbertext">1 / 7</div>
+            <img src="./img/07-Bid/1000x625/bid-01.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlidesM">
+            <div class="numbertext">2 / 7</div>
+            <img src="./img/07-Bid/1000x625/bid-02.JPG" style="width: 100%" />
+          </div>
+
+          <div class="mySlidesM">
+            <div class="numbertext">3 / 7</div>
+            <img src="./img/07-Bid/1000x625/bid-03.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlidesM">
+            <div class="numbertext">4 / 7</div>
+            <img src="./img/07-Bid/1000x625/bid-04.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlidesM">
+            <div class="numbertext">5 / 7</div>
+            <img src="./img/07-Bid/1000x625/bid-05.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlidesM">
+            <div class="numbertext">6 / 7</div>
+            <img src="./img/07-Bid/1000x625/bid-06.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlidesM vertical">
+            <div class="numbertext">7 / 7</div>
+            <img src="./img/07-Bid/1000x625/bid-07.jpg" style="width: 100%" />
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusDivsM(-1)">&#10094;</a>
+          <a class="next" onclick="plusDivsM(1)">&#10095;</a>
+        </div>
+      </div>
+      <!-- End of The Modal/Lightbox -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="section-center">
+        <a href="mailto:info@materialestudio.com">info@materialestudio.com</a>
+        <p>
+          Nicanor Méndez 2508 - (C1428CAB) - C.A.B.A. - ARGENTINA - Tel.: +54
+          911 5309.6152
+        </p>
+      </div>
+    </footer>
+    <script src="./js/project.js"></script>
+  </body>
+</html>

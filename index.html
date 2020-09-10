@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Material Estudio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./fontello-0c1a8076/css/fontello.css" />
+    <link rel="shortcut icon" href="./img/M Fabicon.svg" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="section-center navbar-center">
+        <img
+          id="nav-logo"
+          class="nav-logo svg-img"
+          src="./img/Logo Material.svg"
+          alt="logo-material-estudio"
+        />
+        <div class="nav-btn" id="nav-btn">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class="menu" id="menu">
+          <li>
+            <a class="menu-link active" href="#hero">home</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#estudio">estudio</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#portfolio">portfolio</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#contact">contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+    <ul class="mobile-menu" id="mobile-menu">
+      <li><a class="mobile-link active" href="#hero">home</a></li>
+      <li><a class="mobile-link" href="#estudio">estudio</a></li>
+      <li><a class="mobile-link" href="#portfolio">portfolio</a></li>
+      <li><a class="mobile-link" href="#contact">contacto</a></li>
+    </ul>
+    <!-- back to top button -->
+    <a href="#hero" id="back-to-top"
+      ><img
+        class="back-to-top svg-img"
+        src="./img/Flecha para SUBIR.svg"
+        alt="flecha para subir"
+    /></a>
+    <!-- Hero -->
+    <header class="hero" id="hero">
+      <img
+        class="mySlides"
+        src="./img/imagenes-hero/escalera-hero.jpg"
+        alt="escalera"
+      />
+      <img
+        class="mySlides"
+        src="./img/imagenes-hero/comedor-hero.jpg"
+        alt="comedor"
+      />
+      <img
+        class="mySlides"
+        src="./img/imagenes-hero/living-hero.jpg"
+        alt="vestidor"
+      />
+      <!-- <button class="button btn-left" onclick="plusDivs(-1)">
+        <img
+          class="f-izquierda"
+          src="./img/Flecha para foto principal.svg"
+          alt=""
+        />
+      </button>
+      <button class="button btn-right" onclick="plusDivs(1)">
+        <img
+          class="f-derecha"
+          src="./img/Flecha para foto principal.svg"
+          alt=""
+        />
+      </button> -->
+    </header>
+
+    <div class="top-section"></div>
+
+    <!-- Estudio -->
+    <section class="estudio" id="estudio">
+      <div class="section-center section-estudio">
+        <h3>estudio</h3>
+        <p>
+          MATERIAL surge en el año 2016 como un equipo interdisciplinario
+          dirigido por arquitectos que a partir de una vasta experiencia
+          Profesional y Académica, entendemos la construcción como consecuencia
+          de un pensamiento, una idea y un modo de vivir, pertinente a un lugar
+          que hace al Habitar y a la Comunicación Social. <br /><br />
+          Abordamos, entonces, así nuestra tarea; y es lo que nos caracteriza.
+          Brindamos un valor agregado que no se reduce sólo a la solución
+          constructiva y técnica, sino también desde lo arquitectónico y social;
+          trabajando en conjunto con el Cliente, desarrollando e interpretando
+          Imagen, Estilos y Tendencias.
+          <br /><br />
+          Acostumbrados a las exigencias que este tipo de trabajo requiere;
+          contamos con un equipo que garantiza el cumplimiento de objetivos en
+          calidad y tiempo; supervisado en todos los ámbitos por profesionales
+          experimentados.
+          <br /><br />
+          Buscamos, desde nuestra labor, poder hacer de su Idea, una realidad
+          Vivible, en calidad, tiempo y forma.
+        </p>
+
+        <!-- Services -->
+
+        <div class="services-center">
+          <!-- single service -->
+          <article class="service">
+            <h4>comercial</h4>
+          </article>
+          <!-- end of single service -->
+          <!-- single service -->
+          <article class="service">
+            <h4>institucional</h4>
+          </article>
+          <!-- end of single service -->
+          <!-- single service -->
+          <article class="service">
+            <h4>interiorismo</h4>
+          </article>
+          <!-- end of single service -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyects -->
+    <section class="section proyects" id="portfolio">
+      <div class="section-center portfolio-center">
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/01-Definit/definit-01-ppal-small.jpg"
+            alt="definit"
+          />
+
+          <div class="project-info">
+            <p>Definit</p>
+
+            <a href="./proyecto-definit.html">
+              <!-- <img
+                src="./img/Flecha para porfolio.svg"
+                class="svg-img flecha-portfolio"
+                alt=""
+              /> -->
+              <span
+                ><i class="icon-angle-double-down flecha-portfolio"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/02-Embajada de Finlandia/finlandia-01-ppal-small.jpg"
+            alt="finlandia"
+          />
+          <div class="project-info">
+            <p>Embajada de Finlandia</p>
+            <a href="./proyecto-finlandia.html">
+              <span class="flecha-portfolio"
+                ><i class="icon-angle-double-down"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/03-Intal/intal-01-ppal-small.jpg"
+            alt="intal"
+          />
+          <div class="project-info">
+            <p>Intal</p>
+
+            <a href="./proyecto-intal.html"
+              ><span class="flecha-portfolio"
+                ><i class="icon-angle-double-down"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/04-Casa Gascon/gascon-01-ppal-small.jpg"
+            alt="tascani"
+          />
+          <div class="project-info">
+            <p>Casa Gascón</p>
+
+            <a href="./proyecto-gascon.html">
+              <span class="flecha-portfolio"
+                ><i class="icon-angle-double-down"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/05-Tascani/tascani-01-ppal-small.jpg"
+            alt="Embajada de Noruega"
+          />
+          <div class="project-info">
+            <p>Tascani</p>
+
+            <a href="./proyecto-tascani.html">
+              <span class="flecha-portfolio"
+                ><i class="icon-angle-double-down"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/06-Embajada Noruega/noruega-01-ppal-small.jpg"
+            alt="noruega"
+          />
+          <div class="project-info">
+            <p>Embajada de Noruega</p>
+
+            <a href="./proyecto-noruega.html">
+              <span class="flecha-portfolio"
+                ><i class="icon-angle-double-down"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/07-Bid/bid-01-ppal-small.png"
+            alt="bid"
+          />
+          <div class="project-info">
+            <p>Bid</p>
+
+            <a href="./proyecto-bid.html">
+              <span class="flecha-portfolio"
+                ><i class="icon-angle-double-down"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/08-Prudencia Seguros/prudencia-01-ppal-small.jpg"
+            alt="Mamba bar"
+          />
+          <div class="project-info">
+            <p>Prudencia Seguros</p>
+
+            <a href="./proyecto-prudencia.html">
+              <span class="flecha-portfolio"
+                ><i class="icon-angle-double-down"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/09-Mamba/mamba-01-ppal-small.png"
+            alt="Mamba bar"
+          />
+          <div class="project-info">
+            <p>Mamba Bar</p>
+
+            <a href="./proyecto-mamba.html">
+              <span class="flecha-portfolio"
+                ><i class="icon-angle-double-down"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/10-Street market/smarket-01-ppal-small.jpg"
+            alt="Street Market"
+          />
+          <div class="project-info">
+            <p>Street Market</p>
+
+            <a href="./proyecto-smarket.html">
+              <span class="flecha-portfolio"
+                ><i class="icon-angle-double-down"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/11-Kentucky/kentucky-01-ppal-small.png"
+            alt="Kentucky"
+          />
+          <div class="project-info">
+            <p>Kentucky</p>
+
+            <a href="./proyecto-kentucky.html">
+              <span class="flecha-portfolio"
+                ><i class="icon-angle-double-down"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+        <!-- single project  -->
+        <article class="project">
+          <img
+            class="project-img"
+            src="./img/12-Starbucks/starbucks-01-ppal-small.png"
+            alt="Starbucks"
+          />
+          <div class="project-info">
+            <p>Starbucks</p>
+
+            <a href="./proyecto-starbuks.html">
+              <span class="flecha-portfolio"
+                ><i class="icon-angle-double-down"></i
+              ></span>
+            </a>
+          </div>
+        </article>
+        <!-- end of single project  -->
+      </div>
+      <!-- <div class="proyects-footer">
+        <a class="btn" href="portfolio.html">
+          Ver más
+        </a>
+      </div> -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="contact" id="contact">
+      <div class="section-center contact-center">
+        <article class="contact-info">
+          <h4>ARGENTINA</h4>
+          <p>
+            Nicanor Méndez 2508
+            <br />
+            (C1428CAB) - C.A.B.A. - ARGENTINA
+          </p>
+          <p>Tel: +54 911 5309.6152</p>
+        </article>
+        <article class="contact-form">
+          <form
+            action="./form-confirmation.html"
+            class="form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
+            <div class="inputs">
+              <input
+                type="text"
+                name="nombre"
+                class="form-control"
+                placeholder="Nombre"
+              />
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="E-mail"
+              />
+            </div>
+            <textarea
+              name="mensaje"
+              class="form-control"
+              placeholder="Mensaje"
+              rows="4"
+            ></textarea
+            ><br />
+            <button type="submit" class="btn submit-btn">Enviar</button>
+          </form>
+        </article>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

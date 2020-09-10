@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embajada de Noruega</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./fontawesome-5.12.1/css/all.css" />
+    <link rel="shortcut icon" href="./img/M Fabicon.svg" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="section-center navbar-center">
+        <img
+          id="nav-logo"
+          class="nav-logo svg-img"
+          src="./img/Logo Material.svg"
+          alt="logo-material-estudio"
+        />
+        <div class="nav-btn" id="nav-btn">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class="menu">
+          <li>
+            <a class="menu-link active" href="./index.html">home</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#estudio">estudio</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#portfolio">portfolio</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#contact">contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+    <ul class="mobile-menu" id="mobile-menu">
+      <li><a class="mobile-link active" href="./index.html">home</a></li>
+      <li><a class="mobile-link" href="./index.html#estudio">estudio</a></li>
+      <li>
+        <a class="mobile-link" href="./index.html#portfolio">portfolio</a>
+      </li>
+      <li><a class="mobile-link" href="./index.html#contact">contacto</a></li>
+    </ul>
+    <!-- header -->
+    <section class="proyecto-page">
+      <div class="proyecto-page-center">
+        <article class="info-container">
+          <h3>REAL EMBAJADA DE NORUEGA</h3>
+          <h4>Duración: 2 meses</h4>
+          <p>
+            Proyecto y construcción de revalorización institucional.<br />
+            La “naturaleza de carácter” ha sido nuestra premisa para el
+            desarrollo de imagen institucional de oficinas preexistentes de
+            Embajada de Noruega. Adoptando materiales nobles y característicos
+            del país nórdico, e implementando tecnologías sustentables y
+            detalles minimalistas, hemos dado un carácter propio, sobrio y
+            moderno a este espacio que no sólo debe garantizar las condiciones
+            laborales, sino que es reflejo de Noruega en nuestro país.
+          </p>
+        </article>
+        <article class="proyect-container">
+          <img
+            class="mySlides"
+            src="./img/06-Embajada Noruega/700x534/noruega-01.jpg"
+            onclick="openModal()"
+            alt="escalera"
+          />
+          <img
+            class="mySlides"
+            src="./img/06-Embajada Noruega/700x534/noruega-02.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/06-Embajada Noruega/700x534/noruega-03.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/06-Embajada Noruega/700x534/noruega-04.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/06-Embajada Noruega/700x534/noruega-05.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/06-Embajada Noruega/700x534/noruega-06.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+
+          <button id="bleft" class="button btn-left" onclick="plusDivs(-1)">
+            <img
+              class="f-izquierda"
+              src="./img/Flecha para foto principal.svg"
+              alt=""
+            />
+          </button>
+          <button id="bright" class="button btn-right" onclick="plusDivs(1)">
+            <img
+              class="f-derecha"
+              src="./img/Flecha para foto principal.svg"
+              alt=""
+            />
+          </button>
+          <!-- The dots/circles -->
+          <div class="dot-box">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+        </article>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlidesM">
+            <div class="numbertext">1 / 6</div>
+            <img
+              src="./img/06-Embajada Noruega/1000x625/noruega-01.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlidesM">
+            <div class="numbertext">2 / 6</div>
+            <img
+              src="./img/06-Embajada Noruega/1000x625/noruega-02.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlidesM vertical">
+            <div class="numbertext">3 / 6</div>
+            <img
+              src="./img/06-Embajada Noruega/1000x625/noruega-03.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlidesM vertical">
+            <div class="numbertext">4 / 6</div>
+            <img
+              src="./img/06-Embajada Noruega/1000x625/noruega-04.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlidesM vertical">
+            <div class="numbertext">5 / 6</div>
+            <img
+              src="./img/06-Embajada Noruega/1000x625/noruega-05.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlidesM vertical">
+            <div class="numbertext">6 / 6</div>
+            <img
+              src="./img/06-Embajada Noruega/1000x625/noruega-06.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusDivsM(-1)">&#10094;</a>
+          <a class="next" onclick="plusDivsM(1)">&#10095;</a>
+        </div>
+      </div>
+      <!-- End of The Modal/Lightbox -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="section-center">
+        <a href="mailto:info@materialestudio.com">info@materialestudio.com</a>
+        <p>
+          Nicanor Méndez 2508 - (C1428CAB) - C.A.B.A. - ARGENTINA - Tel.: +54
+          911 5309.6152
+        </p>
+      </div>
+    </footer>
+    <script src="./js/project.js"></script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prudencia Seguros</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./fontawesome-5.12.1/css/all.css" />
+    <link rel="shortcut icon" href="./img/M Fabicon.svg" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="section-center navbar-center">
+        <img
+          id="nav-logo"
+          class="nav-logo svg-img"
+          src="./img/Logo Material.svg"
+          alt="logo-material-estudio"
+        />
+        <div class="nav-btn" id="nav-btn">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class="menu">
+          <li>
+            <a class="menu-link active" href="./index.html">home</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#estudio">estudio</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#portfolio">portfolio</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#contact">contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+    <ul class="mobile-menu" id="mobile-menu">
+      <li><a class="mobile-link active" href="./index.html">home</a></li>
+      <li><a class="mobile-link" href="./index.html#estudio">estudio</a></li>
+      <li>
+        <a class="mobile-link" href="./index.html#portfolio">portfolio</a>
+      </li>
+      <li><a class="mobile-link" href="./index.html#contact">contacto</a></li>
+    </ul>
+    <!-- header -->
+    <section class="proyecto-page">
+      <div class="proyecto-page-center">
+        <article class="info-container">
+          <h3>Prudencia Seguros</h3>
+          <h4>Duración: 4 meses</h4>
+          <p>
+            Asistencia proyectual y materialización.<br />
+            Modernizar el espacio de trabajo fue la premisa para el desarrollo
+            proyectual y materialización de esta oficina de Compañía de Seguros.
+            Emplazada en un edificio de carácter histórico construido en 1910,
+            se utilizó la solvencia arquitectónica como lenguaje de la Compañía,
+            y se reinterpretó de acuerdo a las formas de trabajo, capacitación y
+            esparcimiento propias de los tiempos actuales.
+          </p>
+        </article>
+        <article class="proyect-container">
+          <img
+            class="mySlides"
+            src="./img/08-Prudencia Seguros/700x534/prudencia-01.jpg"
+            onclick="openModal()"
+            alt="escalera"
+          />
+          <img
+            class="mySlides"
+            src="./img/08-Prudencia Seguros/700x534/prudencia-02.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides"
+            src="./img/08-Prudencia Seguros/700x534/prudencia-03.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides"
+            src="./img/08-Prudencia Seguros/700x534/prudencia-04.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides"
+            src="./img/08-Prudencia Seguros/700x534/prudencia-05.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+
+          <button id="bleft" class="button btn-left" onclick="plusDivs(-1)">
+            <img
+              class="f-izquierda"
+              src="./img/Flecha para foto principal.svg"
+              alt=""
+            />
+          </button>
+          <button id="bright" class="button btn-right" onclick="plusDivs(1)">
+            <img
+              class="f-derecha"
+              src="./img/Flecha para foto principal.svg"
+              alt=""
+            />
+          </button>
+          <!-- The dots/circles -->
+          <div class="dot-box">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+        </article>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlidesM">
+            <div class="numbertext">1 / 5</div>
+            <img
+              src="./img/08-Prudencia Seguros/1000x625/prudencia-01.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlidesM">
+            <div class="numbertext">2 / 5</div>
+            <img
+              src="./img/08-Prudencia Seguros/1000x625/prudencia-02.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlidesM">
+            <div class="numbertext">3 / 5</div>
+            <img
+              src="./img/08-Prudencia Seguros/1000x625/prudencia-03.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlidesM">
+            <div class="numbertext">4 / 5</div>
+            <img
+              src="./img/08-Prudencia Seguros/1000x625/prudencia-04.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlidesM">
+            <div class="numbertext">5 / 5</div>
+            <img
+              src="./img/08-Prudencia Seguros/1000x625/prudencia-05.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusDivsM(-1)">&#10094;</a>
+          <a class="next" onclick="plusDivsM(1)">&#10095;</a>
+        </div>
+      </div>
+      <!-- End of The Modal/Lightbox -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="section-center">
+        <a href="mailto:info@materialestudio.com">info@materialestudio.com</a>
+        <p>
+          Nicanor Méndez 2508 - (C1428CAB) - C.A.B.A. - ARGENTINA - Tel.: +54
+          911 5309.6152
+        </p>
+      </div>
+    </footer>
+    <script src="./js/project.js"></script>
+  </body>
+</html>

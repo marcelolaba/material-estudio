@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Gascon</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./fontawesome-5.12.1/css/all.css" />
+    <link rel="shortcut icon" href="./img/M Fabicon.svg" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="section-center navbar-center">
+        <img
+          id="nav-logo"
+          class="nav-logo svg-img"
+          src="./img/Logo Material.svg"
+          alt="logo-material-estudio"
+        />
+        <div class="nav-btn" id="nav-btn">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class="menu">
+          <li>
+            <a class="menu-link active" href="./index.html">home</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#estudio">estudio</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#portfolio">portfolio</a>
+          </li>
+          <li>
+            <a class="menu-link" href="./index.html#contact">contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+    <ul class="mobile-menu" id="mobile-menu">
+      <li><a class="mobile-link active" href="./index.html">home</a></li>
+      <li><a class="mobile-link" href="./index.html#estudio">estudio</a></li>
+      <li>
+        <a class="mobile-link" href="./index.html#portfolio">portfolio</a>
+      </li>
+      <li><a class="mobile-link" href="./index.html#contact">contacto</a></li>
+    </ul>
+    <!-- header -->
+    <section class="proyecto-page">
+      <div class="proyecto-page-center">
+        <article class="info-container">
+          <h3>CASA GASCÓN</h3>
+          <h4>Duración: 5 meses</h4>
+          <p>
+            Proyecto y ejecución de remodelación integral.<br />
+            Casa Gascón se trata de la puesta en valor y modernización de una
+            vivienda unifamiliar. La estructura general data del año 1960 y se
+            encontraba en estado de abandono. El proyecto se basó en la
+            integración de espacios, deconstrucción de los usos y agiornarlos al
+            modo de vida actual, y potenciar la conexión con la naturaleza y la
+            luz natural; sin perder el carácter original de la casa que le
+            proporciona calidez de hogar y mantiene la escala barrial.
+          </p>
+        </article>
+        <article class="proyect-container">
+          <img
+            class="mySlides vertical"
+            src="./img/04-Casa Gascon/350x534/gascon-01.jpg"
+            onclick="openModal()"
+            alt="escalera"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/04-Casa Gascon/350x534/gascon-02.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/04-Casa Gascon/350x534/gascon-03.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/04-Casa Gascon/350x534/gascon-04.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/04-Casa Gascon/350x534/gascon-05.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/04-Casa Gascon/350x534/gascon-06.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/04-Casa Gascon/350x534/gascon-07.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/04-Casa Gascon/350x534/gascon-08.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+          <img
+            class="mySlides vertical"
+            src="./img/04-Casa Gascon/350x534/gascon-09.jpg"
+            onclick="openModal()"
+            alt="living"
+          />
+
+          <button id="bleft" class="button btn-left" onclick="plusDivs(-1)">
+            <img
+              class="f-izquierda"
+              src="./img/Flecha para foto principal.svg"
+              alt=""
+            />
+          </button>
+          <button id="bright" class="button btn-right" onclick="plusDivs(1)">
+            <img
+              class="f-derecha"
+              src="./img/Flecha para foto principal.svg"
+              alt=""
+            />
+          </button>
+          <!-- The dots/circles -->
+          <div class="dot-box">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+          </div>
+        </article>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlidesM vertical">
+            <div class="numbertext">1 / 9</div>
+            <img
+              src="./img/04-Casa Gascon/500x625/gascon-01.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlidesM vertical">
+            <div class="numbertext">2 / 9</div>
+            <img
+              src="./img/04-Casa Gascon/500x625/gascon-02.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlidesM vertical">
+            <div class="numbertext">3 / 9</div>
+            <img
+              src="./img/04-Casa Gascon/500x625/gascon-03.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlidesM vertical">
+            <div class="numbertext">4 / 9</div>
+            <img
+              src="./img/04-Casa Gascon/500x625/gascon-04.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlidesM vertical">
+            <div class="numbertext">5 / 9</div>
+            <img
+              src="./img/04-Casa Gascon/500x625/gascon-05.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlidesM vertical">
+            <div class="numbertext">6 / 9</div>
+            <img
+              src="./img/04-Casa Gascon/500x625/gascon-06.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlidesM vertical">
+            <div class="numbertext">7 / 9</div>
+            <img
+              src="./img/04-Casa Gascon/500x625/gascon-07.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlidesM vertical">
+            <div class="numbertext">8 / 9</div>
+            <img
+              src="./img/04-Casa Gascon/500x625/gascon-08.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlidesM vertical">
+            <div class="numbertext">9 / 9</div>
+            <img
+              src="./img/04-Casa Gascon/500x625/gascon-09.jpg"
+              style="width: 100%"
+            />
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusDivsM(-1)">&#10094;</a>
+          <a class="next" onclick="plusDivsM(1)">&#10095;</a>
+        </div>
+      </div>
+      <!-- End of The Modal/Lightbox -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="section-center">
+        <a href="mailto:info@materialestudio.com">info@materialestudio.com</a>
+        <p>
+          Nicanor Méndez 2508 - (C1428CAB) - C.A.B.A. - ARGENTINA - Tel.: +54
+          911 5309.6152
+        </p>
+      </div>
+    </footer>
+    <script src="./js/project.js"></script>
+  </body>
+</html>
