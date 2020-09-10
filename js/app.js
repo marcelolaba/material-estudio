@@ -1,6 +1,8 @@
 //sidebar
 const navBtn = document.getElementById("nav-btn");
-navBtn.style.marginTop = "25px";
+navBtn.style.paddingTop = "25px";
+var menu = document.getElementById("menu");
+menu.style.paddingTop = "35px";
 const mobileMenu = document.getElementById("mobile-menu");
 const navBar = document.getElementsByClassName("navbar-center");
 
@@ -90,7 +92,6 @@ $(document).ready(function () {
 //Srink navbar on scroll
 $(window).scroll(function () {
   var y = document.getElementsByClassName("menu-link");
-  var menu = document.getElementById("menu");
   var logo = document.getElementById("nav-logo");
 
   if ($(document).scrollTop() > 50) {
@@ -99,9 +100,8 @@ $(window).scroll(function () {
     for (i = 0; i < y.length; i++) {
       y[i].style.fontSize = "1rem";
     }
-    menu.style.marginTop = "10px";
-    logo.style.marginTop = "0px";
-    navBtn.style.marginTop = "0px";
+    menu.style.paddingTop = "10px";
+    navBtn.style.paddingTop = "0px";
     if ($(mobileMenu).hasClass("show-nav")) {
       mobileMenu.classList.remove("show-nav");
       mobileMenu.classList.toggle("show-nav-small");
@@ -112,13 +112,13 @@ $(window).scroll(function () {
     for (i = 0; i < y.length; i++) {
       y[i].style.fontSize = "1.2rem";
     }
-    menu.style.marginTop = "55px";
-    navBtn.style.marginTop = "25px";
-    if ($(window).width() <= 992) {
-      logo.style.marginTop = "0px";
-    } else {
-      logo.style.marginTop = "20px";
-    }
+    menu.style.paddingTop = "35px";
+    navBtn.style.paddingTop = "25px";
+    // if ($(window).width() <= 992) {
+    //   logo.style.marginTop = "0px";
+    // } else {
+    //   logo.style.marginTop = "20px";
+    // }
     if ($(mobileMenu).hasClass("show-nav-small")) {
       mobileMenu.classList.remove("show-nav-small");
       mobileMenu.classList.toggle("show-nav");
