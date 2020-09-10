@@ -1,6 +1,6 @@
 //sidebar
 const navBtn = document.getElementById("nav-btn");
-navBtn.style.marginTop = "25px";
+// navBtn.style.marginTop = "25px";
 const mobileMenu = document.getElementById("mobile-menu");
 const navBar = document.getElementsByClassName("navbar-center");
 
