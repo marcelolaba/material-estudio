@@ -32,27 +32,6 @@ function showDivs() {
   setTimeout(showDivs, 3000); // Change image every 3 seconds
 }
 
-// var slideIndex = 1;
-// showDivs(slideIndex);
-
-// function plusDivs(n) {
-//   showDivs((slideIndex += n));
-// }
-// function showDivs(n) {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   if (n > x.length) {
-//     slideIndex = 1;
-//   }
-//   if (n < 1) {
-//     slideIndex = x.length;
-//   }
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   x[slideIndex - 1].style.display = "block";
-// }
-
 // JQuery------------------------------------------//
 // smooth scroll
 $(document).ready(function () {
@@ -96,7 +75,7 @@ $(window).scroll(function () {
 
   if ($(document).scrollTop() > 50) {
     $(navBar).addClass("shrink");
-    document.getElementById("nav-logo").style.height = "2rem";
+    logo.style.height = "2rem";
     for (i = 0; i < y.length; i++) {
       y[i].style.fontSize = "1rem";
     }
@@ -108,17 +87,13 @@ $(window).scroll(function () {
     }
   } else {
     $(navBar).removeClass("shrink");
-    document.getElementById("nav-logo").style.height = "4rem";
+    logo.style.height = "4rem";
     for (i = 0; i < y.length; i++) {
       y[i].style.fontSize = "1.2rem";
     }
     menu.style.paddingTop = "35px";
     navBtn.style.paddingTop = "25px";
-    // if ($(window).width() <= 992) {
-    //   logo.style.marginTop = "0px";
-    // } else {
-    //   logo.style.marginTop = "20px";
-    // }
+
     if ($(mobileMenu).hasClass("show-nav-small")) {
       mobileMenu.classList.remove("show-nav-small");
       mobileMenu.classList.toggle("show-nav");
