@@ -1,4 +1,9 @@
 //slideshow
+var x = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+const bLeft = document.getElementById("bleft");
+const bRight = document.getElementById("bright");
+
 var slideIndex = 1; //indica el slide actual(arranca en 1, no en 0)
 showDivs(slideIndex); //llamo a la función con el indice deseado
 
@@ -15,8 +20,8 @@ function currentSlide(n) {
 function showDivs(n) {
   //función que muestra el slide correspondiente al valor de "n"
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  //   var x = document.getElementsByClassName("mySlides");
+  //   var dots = document.getElementsByClassName("dot");
   if (n > x.length) {
     //si el anterior, era el último y sigue adelante, paso al primero
     slideIndex = 1;
@@ -41,12 +46,16 @@ function showDivs(n) {
     $(window).width() >= 992
   ) {
     //muevo las flechas al medio
-    document.getElementById("bleft").style.left = "calc(25% + 1rem)";
-    document.getElementById("bright").style.right = "calc(25% + 1rem)";
+    // document.getElementById("bleft").style.left = "calc(25% + 1rem)";
+    // document.getElementById("bright").style.right = "calc(25% + 1rem)";
+    bLeft.style.left = "calc(25% + 1rem)";
+    bRight.style.right = "calc(25% + 1rem)";
   } else {
     //sino, las posiciono en los costados
-    document.getElementById("bleft").style.left = "1rem";
-    document.getElementById("bright").style.right = "1rem";
+    // document.getElementById("bleft").style.left = "1rem";
+    // document.getElementById("bright").style.right = "1rem";
+    bLeft.style.left = "1rem";
+    bRight.style.right = "1rem";
   }
 }
 var mySlides = document.getElementsByClassName("mySlides");
