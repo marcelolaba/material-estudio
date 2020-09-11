@@ -337,7 +337,7 @@ Hero
   margin-bottom: var(--navbar-height);
 }
 .hero .mySlides {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1.5s ease-in-out;
 }
 .hero img {
