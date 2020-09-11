@@ -4,28 +4,6 @@ var menu = document.getElementById("menu");
 const mobileMenu = document.getElementById("mobile-menu");
 const navBar = document.getElementsByClassName("navbar-center");
 
-//slideshow automático//
-var slideIndex = 0; //indica el slide actual(arranca en 1, no en 0)
-showDivs();
-function showDivs() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  // Recorro todos los slides y los oculto
-  for (i = 0; i < x.length; i++) {
-    x[i].style.opacity = 0;
-  }
-  // paso al siguiente slide
-  slideIndex++;
-  //Si el anterior era el último, paso al primero
-  if (slideIndex > x.length) {
-    slideIndex = 1;
-  }
-  //muestro el slide actual
-  x[slideIndex - 1].style.opacity = 1;
-  //pongo un timer en 3s para que se repita la función
-  setTimeout(showDivs, 3000);
-}
-
 //abre o cierra el menu mobile según si la barra está grande o chica
 //y cambia el icono de barras vericales a cruz
 navBtn.addEventListener("click", () => {
@@ -82,39 +60,4 @@ $(window).scroll(function () {
     //si vuelvo a estar cerca de la pagina inicial
     document.getElementById("back-to-top").style.display = "none"; //escondo el boton de back to home
   }
-});
-
-// smooth scroll
-$(document).ready(function () {
-  // Add smooth scrolling to all links
-  $("a").on("click", function (event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-      if (
-        mobileMenu.classList.contains("show-nav") ||
-        mobileMenu.classList.contains("show-nav-small")
-      ) {
-        mobileMenu.classList.remove("show-nav");
-        mobileMenu.classList.remove("show-nav-small");
-        navBtn.classList.toggle("change");
-      }
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top,
-        },
-        800,
-        function () {
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        }
-      );
-    } // End if
-  });
 });
