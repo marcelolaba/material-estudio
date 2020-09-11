@@ -39,6 +39,7 @@ function showDivs(n) {
   //   dots[i].className = dots[i].className.replace(" active-dot", "");
   // }
   x[slideIndex - 1].style.display = "block"; //muestro el slide elegido
+
   //dots[slideIndex - 1].className += " active-dot"; //activo el dot elegido
   if (
     //si el slide es vertical y la pantalla es grande

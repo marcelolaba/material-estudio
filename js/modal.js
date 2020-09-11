@@ -1,12 +1,13 @@
+const myModal = document.getElementById("myModal");
 var dots = document.getElementsByClassName("dot");
 
 // Open the Modal
 function openModal() {
-  document.getElementById("myModal").style.display = "block";
+  myModal.style.display = "block";
 }
 // Close the Modal
 function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+  myModal.style.display = "none";
 }
 
 //slideshow del modal
@@ -33,11 +34,13 @@ function showDivsM(n) {
   }
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
+    //x[i].style.opacity = 0;
   }
   //recorro todos los dots y los desactivo
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active-dot", "");
   }
   x[slideIndexM - 1].style.display = "block";
+  //x[slideIndex - 1].style.opacity = 1;
   dots[slideIndexM - 1].className += " active-dot"; //activo el dot elegido
 }
