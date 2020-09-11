@@ -531,13 +531,13 @@ Portfolio
   } */
 }
 /*
-===============
-Contact Form
-===============
+=====================
+Footer - Contact Form
+=====================
 */
 .contact {
   background-color: var(--clr-primary-0);
-  padding: 3rem 0 1rem 0;
+  padding: 3rem 0 2rem 0;
 }
 .contact-center {
   max-width: 1070px;
@@ -625,38 +625,7 @@ input {
   }
 }
 
-/*
-===============
-Footer
-===============
-*/
-.footer {
-  background-color: var(--clr-primary-0);
-  height: var(--footer-height);
-  text-align: center;
-  padding: 0.5rem 0;
-}
-.footer a {
-  color: var(--clr-primary-7);
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  font-size: 0.5rem;
-}
-.footer p {
-  color: var(--clr-primary-7);
-  margin-bottom: 0;
-  font-size: 0.5rem;
-}
-
-@media screen and (min-width: 992px) {
-  .footer p {
-    font-size: 0.75rem;
-  }
-  .footer a {
-    font-size: 0.75rem;
-  }
-}
-/* ================================================================== */
+/* ============================================================================= */
 
 /*
 ======================
@@ -767,7 +736,44 @@ Proyecto_template page
     margin-bottom: 0rem;
   }
 }
-/* The Modal (background) */
+/*
+===============
+Footer
+===============
+*/
+.footer {
+  background-color: var(--clr-primary-0);
+  height: var(--footer-height);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.footer a {
+  color: var(--clr-primary-7);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.5rem;
+}
+.footer p {
+  color: var(--clr-primary-7);
+  margin-bottom: 0;
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .footer p {
+    font-size: 0.75rem;
+  }
+  .footer a {
+    font-size: 0.75rem;
+  }
+}
+
+/*
+======================
+The Modal (background)
+======================
+*/
+
 .modal {
   display: none;
   position: fixed;
