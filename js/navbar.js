@@ -2,7 +2,9 @@
 const navBtn = document.getElementById("nav-btn");
 var menu = document.getElementById("menu");
 const mobileMenu = document.getElementById("mobile-menu");
-const navBar = document.getElementsByClassName("navbar-center");
+const navBar = document.getElementsByClassName("navbar");
+var y = document.getElementsByClassName("menu-link");
+var logo = document.getElementById("nav-logo");
 
 //abre o cierra el menu mobile según si la barra está grande o chica
 //y cambia el icono de barras vericales a cruz
@@ -20,9 +22,6 @@ navBtn.addEventListener("click", () => {
 
 //Srink navbar on scroll
 $(window).scroll(function () {
-  var y = document.getElementsByClassName("menu-link");
-  var logo = document.getElementById("nav-logo");
-
   if ($(document).scrollTop() > 50) {
     //Cuando se detecta el scroll:
     $(navBar).addClass("shrink"); //la barra se achica

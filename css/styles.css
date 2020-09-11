@@ -181,12 +181,15 @@ Navbar
   background-color: var(--clr-white);
   box-shadow: var(--dark-shadow);
   position: fixed;
+  height: var(--navbar-height);
   width: 100%;
   z-index: 2;
   transition: all 0.4s ease;
+  display: grid;
+  align-items: center;
 }
 .navbar-center {
-  height: var(--navbar-height);
+  /* height: var(--navbar-height); */
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
