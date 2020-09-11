@@ -275,6 +275,7 @@ Sidebar
 ===============
 */
 .mobile-menu {
+  display: none;
   position: fixed;
   top: var(--navbar-height);
   width: 100%;
