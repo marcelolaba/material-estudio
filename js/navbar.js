@@ -14,8 +14,9 @@ navBtn.addEventListener("click", () => {
   } else {
     mobileMenu.classList.toggle("show-nav");
   }
-  navBtn.classList.toggle("change");
+
   // la función toggle, agrega la clase si no está y la saca si está
+  navBtn.classList.toggle("change");
 });
 
 // JQuery---------------------------------------------------//
