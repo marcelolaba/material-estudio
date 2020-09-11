@@ -1,6 +1,6 @@
 //slideshow
 var x = document.getElementsByClassName("mySlides");
-var dots = document.getElementsByClassName("dot");
+//var dots = document.getElementsByClassName("dot");
 const bLeft = document.getElementById("bleft");
 const bRight = document.getElementById("bright");
 
@@ -35,11 +35,11 @@ function showDivs(n) {
     x[i].style.display = "none"; //
   }
   //recorro todos los dots y los desactivo
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active-dot", "");
-  }
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active-dot", "");
+  // }
   x[slideIndex - 1].style.display = "block"; //muestro el slide elegido
-  dots[slideIndex - 1].className += " active-dot"; //activo el dot elegido
+  //dots[slideIndex - 1].className += " active-dot"; //activo el dot elegido
   if (
     //si el slide es vertical y la pantalla es grande
     x[slideIndex - 1].classList.contains("vertical") &&

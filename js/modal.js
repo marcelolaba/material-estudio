@@ -1,3 +1,5 @@
+var dots = document.getElementsByClassName("dot");
+
 // Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
@@ -32,5 +34,10 @@ function showDivsM(n) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
+  //recorro todos los dots y los desactivo
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-dot", "");
+  }
   x[slideIndexM - 1].style.display = "block";
+  dots[slideIndexM - 1].className += " active-dot"; //activo el dot elegido
 }
