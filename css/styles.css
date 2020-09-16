@@ -516,6 +516,7 @@ Footer - Contact Form
 .contact {
   background-color: var(--clr-primary-0);
   padding: 3rem 0 2rem 0;
+  position: relative;
 }
 .contact-center {
   max-width: 1070px;
@@ -580,6 +581,19 @@ input {
   font-weight: 400;
   letter-spacing: 0.15rem;
   font-size: 0.875rem;
+}
+
+.marla {
+  color: var(--clr-primary-7);
+  font-family: var(--ff-primary);
+  font-size: 0.875rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 5rem;
+}
+.marla a {
+  color: var(--clr-primary-7);
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 992px) {
